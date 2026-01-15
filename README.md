@@ -27,6 +27,26 @@ A Manifest V3 Chrome Extension designed to extract specific data fields from Sal
     * Click **Load unpacked**.
     * Select the `dist` folder that has been previously generated.
 
+## Project Structure 
+
+```bash
+salesforce-extractor/
+├── dist/                   # Compiled & bundled extension
+├── public/                 # Static assets & extension metadata
+│   └── manifest.json       # Extension Metadata & Permissions
+├── src/
+│   ├── scripts/            # Core Extension Logic
+│   │   ├── background.js   # Service Worker (Manifest V3)
+│   │   └── content.js      # DOM Scraper & Notification Logic
+│   ├── App.jsx             # React Popup Dashboard
+│   ├── main.jsx            # React Entry Point
+│   └── index.css           # Tailwind CSS & Global Styles
+├── index.html              # Popup Dashboard Entry Point
+├── package.json            # Dependencies & Build Scripts
+├── tailwind.config.js      # CSS configuration
+└── vite.config.js          # Build Pipeline Configuration
+```
+
 ##  Features
 * **Smart DOM Scraping:** Detects active Salesforce objects and extracts relevant fields (e.g., Opportunity Stage & Probability).
 * **Persistent Storage:** Uses `chrome.storage.local` to save data between sessions.
