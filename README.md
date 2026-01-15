@@ -6,7 +6,7 @@ A Manifest V3 Chrome Extension designed to extract specific data fields from Sal
 
 1.  **Clone the Repository**
     ```bash
-    git clone <https://github.com/prabhaKaranpy/Swades-Chrome-Extension.git>
+    git clone https://github.com/prabhaKaranpy/Swades-Chrome-Extension.git .
     cd salesforce-extractor
     ```
 
