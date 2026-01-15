@@ -2,6 +2,31 @@
 
 A Manifest V3 Chrome Extension designed to extract specific data fields from Salesforce Lightning records (Leads, Opportunities, Contacts, Accounts) and persist them locally for quick access.
 
+##  Installation & Setup
+
+1.  **Clone the Repository**
+    ```bash
+    git clone <https://github.com/prabhaKaranpy/Swades-Chrome-Extension.git>
+    cd salesforce-extractor
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Build the Extension**
+    ```bash
+    npm run build
+    ```
+    *This will generate a `dist` folder.*
+
+4.  **Load into Chrome**
+    * Open `chrome://extensions/`
+    * Enable **Developer mode** (top right).
+    * Click **Load unpacked**.
+    * Select the `dist` folder generated in step 3.
+
 ##  Features
 * **Smart DOM Scraping:** Detects active Salesforce objects and extracts relevant fields (e.g., Opportunity Stage & Probability).
 * **Persistent Storage:** Uses `chrome.storage.local` to save data between sessions.
@@ -68,31 +93,6 @@ The data is persisted in `chrome.storage.local` using a structured JSON format t
   }
 }
 ```
-
-##  Installation & Setup
-
-1.  **Clone the Repository**
-    ```bash
-    git clone <your-repo-link>
-    cd salesforce-extractor
-    ```
-
-2.  **Install Dependencies**
-    ```bash
-    npm install
-    ```
-
-3.  **Build the Extension**
-    ```bash
-    npm run build
-    ```
-    *This will generate a `dist` folder.*
-
-4.  **Load into Chrome**
-    * Open `chrome://extensions/`
-    * Enable **Developer mode** (top right).
-    * Click **Load unpacked**.
-    * Select the `dist` folder generated in step 3.
 
 ##  How to Test
 
