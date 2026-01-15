@@ -25,7 +25,7 @@ A Manifest V3 Chrome Extension designed to extract specific data fields from Sal
     * Open `chrome://extensions/`
     * Enable **Developer mode** (top right).
     * Click **Load unpacked**.
-    * Select the `dist` folder generated in step 3.
+    * Select the `dist` folder that has been previously generated.
 
 ##  Features
 * **Smart DOM Scraping:** Detects active Salesforce objects and extracts relevant fields (e.g., Opportunity Stage & Probability).
