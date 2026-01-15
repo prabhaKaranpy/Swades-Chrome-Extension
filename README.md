@@ -53,7 +53,7 @@ The data is persisted in `chrome.storage.local` using a structured JSON format t
         "id": "006fj000008CcrJ",
         "name": "Test Deal 2026",
         "amount": "$1,000.00",
-        "stage": "Qualification",
+        "stage": "Qualification | Prospecting | Proposal | Negotiation | Closed | Won/Los",
         "probability": "10",
         "closeDate": "2/3/2026",
         "account": "Swades AI",
